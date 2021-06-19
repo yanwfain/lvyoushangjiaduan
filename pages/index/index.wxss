@@ -1,0 +1,243 @@
+.Shouquan {
+  position: fixed;
+  top: 30%;
+  z-index: 99;
+  width: 70%;
+  left: 15%;
+  right: 15%;
+  padding: 20rpx 0 0 0;
+  border-radius: 12rpx;
+  background: rgb(248, 248, 248);
+}
+.jia{
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+.jia::before{
+  display: block;
+  content: '';
+  width: 2px;
+  height:15px;
+  background: #ffbc00;
+  position: absolute;
+  top:20%;
+  left:9px;
+  margin-top: 0px;
+}
+.jia::after{
+  display: block;
+  content: '';
+  width: 18px;
+  height: 2px;
+  background: #ffbc00;
+  position: absolute;
+  top: 33%;
+  left:1px;
+  margin-top: 3px;
+}
+.check {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 26px;
+  color: #ffbc00;
+
+}
+.check::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 8px;
+  width: 50%;
+  height: 24%;
+  border: 2px solid gray;
+  border-radius: 1px;
+  border-top: none;
+  border-right: none;
+  background: transparent;
+  transform: rotate(-45deg);
+}
+
+.txts_icon {
+  font-size: 28rpx;
+}
+
+.titless {
+  width: 100%;
+  text-align: center;
+}
+
+.cont_tltsops {
+  width: 90%;
+  text-align: center;
+  height: 120rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.btn_button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2rpx solid #ccc;
+}
+
+.quxiao_btn {
+  width: 49%;
+  border-right: 2rpx solid #ccc;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+}
+
+.butn_bottys {
+  width: 49%;
+  text-align: center;
+  line-height: 100rpx;
+  color: rgb(41, 121, 41);
+  font-size: 30rpx;
+}
+
+button {
+  border: none;
+  font-size: 0;
+}
+
+button::after {
+  border: none;
+}
+
+.getUser {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 80rpx;
+  background: rgb(20, 141, 20);
+  color: white;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+}
+
+.opsbjc {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 98;
+  opacity: 0.8;
+  background: black;
+}
+.contentUser{
+  width: 84%;
+  padding: 3%;
+  margin: 0 auto;
+  background: white;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-top: 50rpx;
+}
+.contentUserList{
+  display: flex;
+  flex-wrap:wrap;
+  width: 84%;
+  padding: 3%;
+  margin: 0 auto;
+  background: white;
+}
+.headImg{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 100%;
+
+}
+.delit_suer{
+  width: 62%;
+
+}
+.name{
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.name_address{
+  font-size: 26rpx;
+  color: #999999;
+}
+.imgxiaxi{
+  width: 70rpx;
+  height: 70rpx;
+  position: relative;
+}
+.xiaoXi{
+  width: 100%;
+  height: 100%;
+}
+.xiaNum{
+  padding: 6rpx 14rpx;
+  color: white;
+  background:#FF636A;
+  position: absolute;
+  top: -14rpx;
+  right: -16rpx;
+  border-radius: 100%;
+  font-size: 24rpx;
+}
+page{
+  background: #F6F6F6;
+}
+
+.title{
+  margin: 0 auto;
+  width: 90%;
+  padding: 30rpx 0;
+  font-size: 34rpx;
+
+}
+.vie_tab{
+  width: 31%;
+  margin: 2% 1%;
+  text-align: center;
+
+}
+.vie_tab image{
+  width: 105rpx;
+  height: 105rpx;
+
+}
+.vie_tab view{
+  font-size: 26rpx;
+}
+.pageTitle {
+  width: 100%;
+  text-align: center;
+  font-size: 36rpx;
+  color: black;
+  position: relative;
+}
+.pageTitle view{
+  font-size: 34rpx;
+}
+.left_qiehuan{
+  position: absolute;
+  left:20rpx;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+}
+.left_qiehuan image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-left:14rpx
+}

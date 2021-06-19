@@ -1,0 +1,75 @@
+<view class="Shouquan" wx:if="{{!hasUserInfo}}">
+	<view class="titless">
+		提示 ！
+	</view>
+	<view class="cont_tltsops">
+		您还未授权请先授权！
+	</view>
+	<view class="btn_button">
+		<view class="quxiao_btn" bindtap="ggopfn">
+			取消
+		</view>
+		<button class="butn_bottys" bindtap="getUserProfile">去授权 </button>
+	</view>
+</view>
+<view class="opsbjc" wx:if="{{!hasUserInfo}}" bindtap="ggopfn">
+</view>
+<view class="opsbjc" wx:if="{{isSiuser}}" bindtap="ggopfns"></view>
+<view class="Shouquan" wx:if="{{isSiuser}}">
+	<view class="titless">
+		提示 ！
+	</view>
+	<view class="cont_tltsops">
+		您的账号未绑定手机号，点击获取
+	</view>
+	<view class="btn_button">
+		<view class="quxiao_btn" bindtap="ggopfns">
+			取消
+		</view>
+		<button class="butn_bottys" open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber">获取 </button>
+	</view>
+</view>
+<view class="pageTitle" style="margin-top:{{statusBarHeight+10}}px">
+	<view>首页</view>
+	<view class="left_qiehuan" bindtap="listChuang">场所名称 <image src="https://xcx.wanzihaha.com/public/uploads/60.png"></image></view>
+</view>
+<view class="contentUser">
+  <image class="headImg" src="https://xcx.wanzihaha.com/public/uploads/20210615/3db4a1ec434c9649c48a00cfc5350c90.jpg"></image>
+  <view class="delit_suer">
+    <view class="name">用户名</view>
+    <view class="name_address">商家场所名称</view>
+  </view>
+  <view class="imgxiaxi">
+    <view class="xiaNum">10</view>
+    <image class="xiaoXi" src="https://xcx.wanzihaha.com/public/uploads/49.png"></image>
+  </view>
+</view>
+<view class="title">
+	功能列表
+</view>
+<view class="contentUserList">
+	<view class="vie_tab" bindtap="orderList">
+		<image src="https://xcx.wanzihaha.com/public/uploads/58.png"></image>
+		<view>全部订单</view>
+	</view>
+	<view class="vie_tab">
+		<image src="https://xcx.wanzihaha.com/public/uploads/53.png"></image>
+		<view>订单核销</view>
+	</view>
+	<view class="vie_tab">
+		<image src="https://xcx.wanzihaha.com/public/uploads/54.png"></image>
+		<view>收入结算</view>
+	</view>
+	<view class="vie_tab">
+		<image src="https://xcx.wanzihaha.com/public/uploads/55.png"></image>
+		<view>销售数据</view>
+	</view>
+	<view class="vie_tab">
+		<image src="https://xcx.wanzihaha.com/public/uploads/56.png"></image>
+		<view>产品列表</view>
+	</view>
+	<view class="vie_tab" bindtap="qianYue">
+		<image src="https://xcx.wanzihaha.com/public/uploads/57.png"></image>
+		<view>签约信息</view>
+	</view>
+</view>

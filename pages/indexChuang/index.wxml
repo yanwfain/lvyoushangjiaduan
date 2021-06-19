@@ -1,0 +1,16 @@
+
+<view style="height:20rpx"></view>
+<view class="list" >
+  <view class="naem">
+    <image class="heshop" mode="aspectFill" src="https://xcx.wanzihaha.com/public/uploads/20210517/6ac818ef9046a4783b55444a6bfb60a2.jpg"></image>
+    <view class="shop_name">场所名称一</view>
+  </view>
+  <view class="rihJto"></view>
+</view>
+<view class="list">
+  <view class="naem">
+    <image class="heshop" mode="aspectFill" src="https://xcx.wanzihaha.com/public/uploads/20210517/6ac818ef9046a4783b55444a6bfb60a2.jpg"></image>
+    <view class="shop_name">场所名称一</view>
+  </view>
+  <view class="rihJto"></view>
+</view>

@@ -1,0 +1,37 @@
+/* pages/indexChuang/index.wxss */
+page{
+  background: #F6F6F6;
+}
+.list{
+  padding: 30rpx;
+  border-bottom: 1px solid #DDDDDD;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: white ;
+}
+.rihJto {
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid #666666;
+  border-right: 1px solid #666666;
+  transform: rotate(45deg);
+}
+.naem{
+  width: 80%;
+  display: flex;
+  align-items: center;
+
+}
+.heshop{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100%;
+  margin-right: 30rpx;
+}
+.shop_name{
+  font-size: 32rpx;
+  width: 72%;
+  overflow: hidden;
+  text-overflow:ellipsis; white-space: nowrap;
+}

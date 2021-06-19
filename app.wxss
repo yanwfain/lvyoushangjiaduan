@@ -1,0 +1,23 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+view{
+  font-family: 'SourceHanSansCN';
+  font-size: 28rpx;
+}
+button {
+  background: none;
+  padding: 0;
+  margin: 0;
+  font-size: 34rpx;
+}
+button:after {
+  border: none;
+}

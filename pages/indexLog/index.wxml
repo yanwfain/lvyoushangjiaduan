@@ -1,0 +1,18 @@
+<view class="logo">
+  <image src="https://xcx.wanzihaha.com/public/uploads/47.png"></image>
+</view>
+<view class="pageTitle">
+  <view class="page_txt">旅游日记-商家端</view>
+  <view class="border_botm"></view>
+</view>
+<view class="list" style="margin-top:150rpx">
+  <view class="chAins">+86</view>
+  <input type="number" bindinput="phone" value="{{phone}}" placeholder="请输入手机号" />
+</view>
+<view class="list">
+
+  <input type="password" class="password" bindinput="password" value="{{password}}" placeholder="请输入密码" />
+  <image class="cha" wx:if="{{password}}" bindtap="passwordDele" src="https://xcx.wanzihaha.com/public/uploads/48.png"></image>
+</view>
+<view class="logn" bindtap="submitLogn">登录</view>
+<view class="tabitps" wx:if="{{isFalse}}">{{isFalse}}</view>

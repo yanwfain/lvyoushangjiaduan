@@ -1,0 +1,180 @@
+<view class="titt">
+  请补全您的签约信息
+</view>
+<view class="content">
+  <view class="list_tie" style="font-weight:600;padding-top:0rpx;color:#333333">主体信息</view>
+  <view class="list_tie">
+    <view class="left_tit">
+      签约主体
+    </view>
+    <view class="picekrs">
+      <picker bindchange="pickerProChangef" range="{{ pickerProDataf }}" range-key="{{'name'}}"
+        value="{{countryIndex}}">
+        <view class="txt" style="">
+          {{pickerProDataf[countryIndex].name?pickerProDataf[countryIndex].name:"请选择签约主体"}} <view class="sanjiao">
+          </view>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class="list_tie">
+    <view class="left_tit">
+      公司名称
+    </view>
+    <input type="text" placeholder="请输入公司名称" />
+  </view>
+  <view class="list_tie" style="border:none">
+    <view class="left_tit">
+      营业执照上传
+    </view>
+  </view>
+
+  <view class="images_box" style="border-bottom:1px solid #DDDDDD">
+    <block wx:for="{{imgbox}}">
+      <view class='img-box' bindtap="topic_preview" data-id="{{item.id}}" data-url="{{item.url1}}">
+        <image class='img' mode="aspectFill" src='{{item.url1}}'></image>
+        <view class='img-delect' data-deindex='{{index}}' catchtap='imgDelete1' data-id="{{item.id}}">
+          <image class='img' src='https://xcx.wanzihaha.com/public/uploads/45.png'></image>
+        </view>
+      </view>
+    </block>
+    <view class='img-box' bindtap='addPic1' data-id="{{item.id}}" wx:if="{{imgbox.length<1}}">
+      <image class='img' src='https://xcx.wanzihaha.com/public/uploads/62.jpg'></image>
+    </view>
+  </view>
+  <view class="list_tie">
+    <view class="left_tit">
+      营业执照上传
+    </view>
+  </view>
+  <view class="images_box" style="border-bottom:1px solid #DDDDDD">
+    <block wx:for="{{imgbox1}}">
+      <view class='img-box' bindtap="topic_preview1" data-id="{{item.id}}" data-url="{{item.url1}}">
+        <image class='img' mode="aspectFill" src='{{item.url1}}'></image>
+        <view class='img-delect' data-deindex='{{index}}' catchtap='imgDelete11' data-id="{{item.id}}">
+          <image class='img' src='https://xcx.wanzihaha.com/public/uploads/45.png'></image>
+        </view>
+      </view>
+    </block>
+    <view class='img-box' bindtap='addPic11' data-id="{{item.id}}" wx:if="{{imgbox1.length<1}}">
+      <image class='img' src='https://xcx.wanzihaha.com/public/uploads/61.jpg'></image>
+    </view>
+  </view>
+</view>
+<view class="content">
+  <view class="list_tie" style="font-weight:600;padding-top:0rpx;color:#333333">主体信息</view>
+  <view class="list_tie">
+    <view class="left_tit">
+      姓名
+    </view>
+    <input type="text" placeholder="请输入联系人姓名" />
+  </view>
+  <view class="list_tie">
+    <view class="left_tit">
+      电话
+    </view>
+    <input type="text" placeholder="请输入联系人电话" />
+  </view>
+  <view class="list_tie">
+    <view class="left_tit">
+      邮箱
+    </view>
+    <input type="text" placeholder="请输入联系人邮箱" />
+  </view>
+</view>
+<view class="content">
+  <view class="list_tie" style="font-weight:600;padding-top:0rpx;color:#333333">结算信息</view>
+  <view class="list_tie">
+    <view class="left_tit">
+      结算周期
+    </view>
+    <view class="picekrs">1周</view>
+  </view>
+  <view class="list_tie">
+    <view class="left_tit">
+      结算模式
+    </view>
+    <view class="picekrs">
+      <picker bindchange="pickerProChangef1" range="{{ pickerProDataf1 }}" range-key="{{'name'}}"
+        value="{{countryIndex1}}">
+        <view class="txt" style="">
+          {{pickerProDataf1[countryIndex1].name?pickerProDataf1[countryIndex1].name:"请选择结算模式"}} <view class="sanjiao">
+          </view>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class="list_tie">
+    <view class="left_tit">
+      商家类别
+    </view>
+    <view class="picekrs">
+      <picker bindchange="pickerProChangef2" range="{{ pickerProDataf2 }}" range-key="{{'name'}}"
+        value="{{countryIndex2}}">
+        <view class="txt" style="">
+          {{pickerProDataf2[countryIndex2].name?pickerProDataf2[countryIndex2].name:"请选择商家类别"}} <view class="sanjiao">
+          </view>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class="list_tie">
+    <view class="left_tit">
+      产品类别
+    </view>
+    <view class="picekrs">
+      <picker bindchange="pickerProChangef3" range="{{ pickerProDataf3 }}" range-key="{{'name'}}"
+        value="{{countryIndex3}}">
+        <view class="txt" style="">
+          {{pickerProDataf3[countryIndex3].name?pickerProDataf3[countryIndex3].name:"请选择产品类别"}} <view class="sanjiao">
+          </view>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class="list_tie">
+    <view class="left_tit">
+      开户名称
+    </view>
+    <input type="text" placeholder="请输入开户名称" />
+  </view>
+  <view class="list_tie">
+    <view class="left_tit">
+      开户行
+    </view>
+    <input type="text" placeholder="请输入开户行" />
+  </view>
+  <view class="list_tie">
+    <view class="left_tit">
+      银行账号
+    </view>
+    <input type="text" placeholder="请输入银行账号" />
+  </view>
+  <view class="list_tie">
+    <view class="left_tit">
+      开户名称
+    </view>
+    <input type="text" placeholder="请输入开户名称" />
+  </view>
+</view>
+
+
+<view class="content">
+  <view class="list_tie" style="font-weight:600;padding-top:0rpx;color:#333333">其他信息</view>
+  <view class="list_tie">
+    <view class="left_tit">
+      发票提供方
+    </view>
+    <view class="picekrs" style="color:#000000">文字占位</view>
+  </view>
+  <view class="list_tie">
+    <view class="left_tit">
+      开票单位
+    </view>
+    <view class="picekrs" style="color:#000000">文字占位</view>
+  </view>
+</view>
+<view style="height:200rpx"></view>
+<view class="submit">
+  提交
+</view>

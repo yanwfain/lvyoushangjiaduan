@@ -1,0 +1,108 @@
+/* pages/qianYue/index.wxss */
+page{
+  background: #F6F6F6;
+}
+.titt{
+  width: 92%;
+  margin: 0 auto;
+  font-size: 32rpx;
+  font-weight: 600;
+  padding: 20rpx 0;
+}
+.content{
+  width: 86%;
+  padding: 3%;
+  margin: 0 auto;
+  background: white;
+  margin-top: 20rpx;
+  border-radius: 14rpx;
+} 
+.list_tie{
+  font-size: 30rpx;
+  padding: 30rpx 0;
+  border-bottom:1px solid #DDDDDD;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #666666;
+}
+.sanjiao {
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid #000000;
+  border-right: 1px solid #000000;
+  transform: rotate(45deg);
+}
+.picekrs{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.picekrs picker{
+  width: 100%;
+
+}
+.txt{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30rpx;
+}
+input{
+  width: 60%;
+  font-size: 30rpx;
+}
+.left_tit{
+  font-size: 30rpx;
+}
+.images_box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /* margin-top: 50rpx; */
+}
+
+.img-box {
+  border: 5rpx;
+  /* border-style: solid;
+  border-color: rgba(0, 0, 0, 0.452); */
+  width: 360rpx;
+  height: 250rpx;
+  margin: 0 10rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+
+/* 删除图片 */
+
+.img-delect {
+  width: 42rpx;
+  height: 42rpx;
+  border-radius: 50%;
+  position: absolute;
+  right:0rpx;
+  top: -10rpx;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+.submit{
+  color: white;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 94rpx;
+  position: fixed;
+  left:5%;
+  bottom: 3%;
+  border-radius: 60rpx;
+  background: #63BA98;
+  z-index: 5;
+  text-align: center;
+}

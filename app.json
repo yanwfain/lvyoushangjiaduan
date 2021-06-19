@@ -1,0 +1,18 @@
+{
+  "pages":[
+    "pages/indexLog/index",
+    "pages/index/index",
+    "pages/indexChuang/index",
+    "pages/qianYue/index",
+    "pages/orderlist/index",
+    
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "sitemapLocation": "sitemap.json"
+}
